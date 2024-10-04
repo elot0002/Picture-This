@@ -1,39 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap");
 
 html,
 body {
-  margin: 0;
+  font-family: "Roboto", sans-serif;
   border: 0;
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 .header {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
   background-color: cadetblue;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
 }
 
 .title {
-  padding: 50px 25px;
   text-align: center;
+  padding: 50px 25px;
 }
 
 h1 {
-  font-size: 3rem;
   margin: 0;
+  font-size: 3rem;
 }
 
 h4 {
-  font-size: 1.5rem;
   font-weight: 300;
+  font-size: 1.5rem;
 }
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 960px) {
+  img {
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
+  }
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
