@@ -2,31 +2,31 @@
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
-  border: 0;
   margin: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
-  background-color: cadetblue;
   display: grid;
-  align-items: center;
   grid-template-columns: 1fr;
+  align-items: center;
+  background-color: cadetblue;
 }
 
 .title {
-  text-align: center;
   padding: 50px 25px;
+  text-align: center;
 }
 
 h1 {
-  margin: 0;
   font-size: 3rem;
+  margin: 0;
 }
 
 h4 {
-  font-weight: 300;
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 img {
@@ -36,12 +36,13 @@ img {
 }
 
 @media (min-width: 960px) {
-  img {
-    width: 50vw;
-    height: 50vw;
-    object-fit: cover;
-  }
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
+    object-fit: cover;
+    height: 50vw;
+    width: 50vw;
   }
 }
